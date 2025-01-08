@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="phone.css" />
+</head>
+
+<body>
+  <header >
+    <!-- <nav  > -->
+    <nav id="nav" >
+    <span id="port"> PORTFOLIO</span>
+    <ul>
+      <li><a href="#" class="active"> <i class="ri-home-7-fill"></i> HOME </a></li>
+      <li><a href="about.html"><i class="ri-user-line"></i> ABOUT </a></li>
+      <li><a href="skill.html"> <i class="ri-profile-line"></i> SKILLS </a></li>
+      <li><a href="project.html"> <i class="ri-profile-line"></i> PROJECT </a></li>
+      <li><a href="contact.html"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
+    </ul>
+    <span onclick="showPanel()" class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </span>
+    </nav>
+    <ul class="slide-bar">
+      <li class="cross" onclick="hidePanel()"><i class="fa-solid fa-xmark"></i></li>
+      <li><a href="#" class="active"> <i class="ri-home-7-fill"></i> HOME </a></li>
+      <li><a href="about.html"><i class="ri-user-line"></i> ABOUT </a></li>
+      <li><a href="skill.html"> <i class="ri-profile-line"></i> SKILLS </a></li>
+      <li><a href="project.html"> <i class="ri-profile-line"></i> PROJECT </a></li>
+      <li><a href="contact.html"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
+    </ul>
+  </header>
+  <main>
+    <div id="content">
+      <div id="container1">
+        <div class="container-1-text">
+          <h4>Hello,</h4>
+          <h4><span>Welcome</span> Visitor</h4>
+          <h4>I am <span id="element"></span></h4>
+          <a href="https://www.linkedin.com/in/shivam-khandla-0377a3343/" id="hire">
+            HIRE ME </a>
+            <a href="resume.pdf" id="hire-2">
+            DOWNLOAD RESUME </a>
+
+        </div>
+      </div>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+      </script>
+      <script src="script.js"></script>
+      <script>
+        var typed = new Typed('#element',
+          {
+            strings: ["Shivam !!", " a Developer. !!", "Tech Lover.!!"],
+            typespeed: 250,
+            bacspeed: 200,
+            loop: true
+          }); </script>
+
+      <div id="container2">
+        <img src="profile.jpeg" alt="">
+        <div class="contact"><span><a href="https://www.instagram.com/shivam.khandla"><i
+                class="ri-instagram-fill"></i></a></span><span><a href="https://www.linkedin.com/in/shivam-khandla-0377a3343/"><i
+                class="ri-linkedin-box-fill"></i></i></a></span>
+          <span><a href=""><i class="ri-facebook-circle-fill"></i></a></span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    function showPanel (){
+      const slidePanel = document.querySelector(".slide-bar");
+      slidePanel.style.display="flex";
+    }
+    function hidePanel(){
+      const slidePanel = document.querySelector(".slide-bar");
+      slidePanel.style.display="none";
+    }
+  </script>
+</body>
+
+</html>

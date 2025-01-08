@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+          <span id="port"> PORTFOLIO</span>
+          <ul>
+            <li><a href="index.html"> <i class="ri-home-7-fill"></i> HOME </a></li>
+            <li><a href="about.html"><i class="ri-user-line"></i> ABOUT </a></li>
+            <li><a href="skill.html"> <i class="ri-profile-line"></i> SKILLS </a></li>
+            <li><a href="project.html"> <i class="ri-profile-line"></i> PROJECT </a></li>
+            <li><a href="#" class="active"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
+          </ul>
+          <span onclick="showPanel()" class="menu"><i class="fa-solid fa-bars"></i></span>
+          </div>
+        </nav>
+        <ul class="slide-bar">
+          <li class="cross" onclick="hidePanel()"><i class="fa-solid fa-xmark"></i></li>
+          <li><a href="index.html"> <i class="ri-home-7-fill"></i> HOME </a></li>
+          <li><a href="about.html" ><i class="ri-user-line"></i> ABOUT </a></li>
+          <li><a href="skill.html" c> <i class="ri-profile-line"></i> SKILLS </a></li>
+          <li><a href="project.html"> <i class="ri-profile-line"></i> PROJECT </a></li>
+          <li><a href="#" class="active"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
+        </ul>
+      </header>
+      <main>
+        <div class="container">
+         <div class="textbox">
+            <h1> CONTACT AND FEEBBACK </h1>
+            <p>THIS FORM WILL NOT SEND DATA TO DATABASE . BCZ I AM STILL LEARNING BACKEND . I ASSURE YOU THAT IT WILL IN FUTURE . IF I WILL MAKE A WEBSITE FOR YOUR !! </p>
+         </div>
+                <form action="action.php" class="form">
+                  <h1>Feedback Form</h1>
+                  <label for="username">YOUR NAME :<input type="text" id="username" placeholder="Username"></label>
+                   
+                   <label for="email">CONTACT EMAIL : <input type="email" id="email" placeholder="Contact Email"> </label>
+                  
+                    <label for="feedback">FEEDBACK : <textarea name="feedback" id="feedback" placeholder="Send Your Valuable Message and Feedback for My improvement !!"></textarea> </label>
+                </form>
+        </div>
+      </main>
+      <script>
+        function showPanel() {
+          const slidePanel = document.querySelector(".slide-bar");
+          slidePanel.style.display = "flex";
+        }
+        function hidePanel() {
+          const slidePanel = document.querySelector(".slide-bar");
+          slidePanel.style.display = "none";
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="about.css" />
+
+  <title> my portfolio </title>
+</head>
+
+<body>
+  <header>
+    <nav id="nav">
+      <span id="port"> PORTFOLIO</span>
+      <ul>
+        <li><a href="index.html"> <i class="ri-home-7-fill"></i> HOME </a></li>
+        <li><a href="#" class="active"><i class="ri-user-line"></i> ABOUT </a></li>
+        <li><a href="skill.html"> <i class="ri-profile-line"></i> SKILLS </a></li>
+        <li><a href="project.html"> <i class="ri-profile-line"></i> PROJECT </a></li>
+        <li><a href="contact.html"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
+      </ul>
+      <span onclick="showPanel()" class="menu"><i class="fa-solid fa-bars"></i></span>
+      </div>
+    </nav>
+    <ul class="slide-bar">
+      <li class="cross" onclick="hidePanel()"><i class="fa-solid fa-xmark"></i></li>
+      <li><a href="index.html"> <i class="ri-home-7-fill"></i> HOME </a></li>
+      <li><a href="#" class="active"><i class="ri-user-line"></i> ABOUT </a></li>
+      <li><a href="skill.html"> <i class="ri-profile-line"></i> SKILLS </a></li>
+      <li><a href="project.html"> <i class="ri-profile-line"></i> PROJECT </a></li>
+      <li><a href="contact.html"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
+    </ul>
+  </header>
+  <main>ś
+    <div class="main" id="about">
+      <!-- --------------------------container first ------------------------------->
+      <div class="container-1">
+        <h1>MY SELF</h1>
+        
+        <div class="container-1-about">
+          <p class="para-head">ABOUT ME</p>
+          <p>
+             "I AM SHIVAM. I AM A MOTIVATED STUDENT WITH A STRONG ACADEMIC FOUNDATION. SKILLED IN GAMING AND SPORTS , I HAVE SUCCESSFULLY COMPLETED PROJECTS IN ELECTRICAL ENGG AS DIPLOMA STUDENT,SUCH AS WIND FARM AND HOME AUTOMOTION . I AM EAGER TO BRING MY KNOWLEDGE AND ENTHUSIASM TO CONTRIBUTE TO YOUR ORGANIZATION."
+             
+        </div>
+      </div>
+      <div class="skills">
+        <h2> SKILLS</h2>
+        <span>
+          Html <p class="html">75%</p>
+        </span>
+        <span>
+          CSS <p class="css">50%</p>
+        </span>
+
+        <span> 
+          JS                       <p class="javascript">50%</p>
+        </span>
+      </div>
+  </main>
+
+  <script>
+    function showPanel() {
+      const slidePanel = document.querySelector(".slide-bar");
+      slidePanel.style.display = "flex";
+    }
+    function hidePanel() {
+      const slidePanel = document.querySelector(".slide-bar");
+      slidePanel.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

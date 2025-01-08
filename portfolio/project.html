@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+  <header >
+    <!-- <nav  > -->
+    <nav id="nav" >
+    <span id="port"> PORTFOLIO</span>
+    <ul>
+      <li><a href="index.html" > <i class="ri-home-7-fill"></i> HOME </a></li>
+      <li><a href="about.html"><i class="ri-user-line"></i> ABOUT </a></li>
+      <li><a href="skill.html"> <i class="ri-profile-line"></i> SKILLS </a></li>
+      <li><a href="#"  class="active"> <i class="ri-profile-line"></i> PROJECT </a></li>
+      <li><a href="contact.html"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
+    </ul>
+    <span onclick="showPanel()" class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </span>
+    </nav>
+    <ul class="slide-bar">
+      <li class="cross" onclick="hidePanel()"><i class="fa-solid fa-xmark"></i></li>
+      <li><a href="index.html"> <i class="ri-home-7-fill"></i> HOME </a></li>
+      <li><a href="about.html" ><i class="ri-user-line"></i> ABOUT </a></li>
+      <li><a href="skill.html"> <i class="ri-profile-line"></i> SKILLS </a></li>
+      <li><a href="#"  class="active"> <i class="ri-profile-line"></i> PROJECT </a></li>
+      <li><a href="contact.html"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="content">
+
+      <!-- ----------------------container second ------------------------------->
+      <div class="container-1">
+        <h1>PROJECT 1</h1>
+
+        <div class="education-box1">
+          <p class="para-head"> PROJECT TITLE  </p>
+          <p class="para-point">WIND FARM </p>
+        </div>
+        <div class="education-box2">
+          <p class="para-head"> PROJECT DISCRIPTION </p>
+          <p class="para-point"> Our wind farm project focuses on harnessing renewable wind energy to generate sustainable electricity for [specific area/region] </p>
+        </div>
+        <div class="education-box3">
+          <p class="para-head"> PURPOSE</p>
+          <p class="para-point"> The purpose of a wind farm project is to harness renewable wind energy to generate clean, sustainable electricity </p>
+        </div>
+      </div>
+      <div class="container-2">
+        <h1>PROJECT 2</h1>
+
+        <div class="education-box4">
+          <p class="para-head">PROJECT TITLE </p>
+          <p class="para-point"> STUDY ABROAD</p>
+        </div>
+        <div class="education-box5">
+          <p class="para-head">PROJECT DISCRIPTION</p>
+          <p class="para-point"> An immersive academic and cultural exchange program designed to provide students with international exposure and learning opportunities. </p>
+        </div>
+        <div class="education-box6">
+          <p class="para-head">PURPOSE</p>
+          <p class="para-point"> The purpose of this study abroad project is to enhance cross-cultural understanding, foster personal and academic growth, and gain hands-on experience in [specific field or area of study] </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    function showPanel (){
+      const slidePanel = document.querySelector(".slide-bar");
+      slidePanel.style.display="flex";
+    }
+    function hidePanel(){
+      const slidePanel = document.querySelector(".slide-bar");
+      slidePanel.style.display="none";
+    }
+  </script>
+</body>
+
+</html>
