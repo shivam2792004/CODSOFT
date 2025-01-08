@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LADAKH</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Places">Places</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Ladakh</h2>
+            <img src="ladakhh.jpg" width="500">
+            <p> Ladakh (meaning "land of high mountain passes") is a mountainous region in North India. Leh,
+            the main city is situated at 3500m above sea level nestled in the great Himalayan, Karakoram, Zanskar and Ladakh ranges.
+            Ladakh is known for remote mountain beauty, studded with monasteries and stupas.
+            Ladakh is often referred as "Little Tibet" due to its geographical proximity and strong links to Tibetan culture.</p>
+        </section>
+
+        <section id="Places">
+            <h2>Places to Travel</h2>
+            <div class="columns">
+                <div class="column">
+                    <h3>Pangong Tso</h3>
+                    <img src="pangong.jpg" width="300">
+                    <p>The most popular tourist attraction in Ladakh, Pangong lake is an endorheic (landlocked) lake situated at 4350 meters.
+                    Also known as Pangong Tso it is 12 kilometres long and extends from India to Tibet.
+                    Almost 60% of Pangong Lake lies in the Tibetan Autonomous Region. </p>
+                </div>
+                <div class="column">
+                    <h3>Khardung La</h3>
+                    <img src="khardung.jpg" width="300">
+                    <p>Khardung La, also known as Khardzong La, is a high mountain pass in Ladakh region of Jammu and Kashmir, near Leh.
+                    It serves as the gateway to Shyok and Nubra Valley. Khardung La is popular as the highest motorable road in India
+                    at an elevation of 5602 metres. However, contrary to the belief,
+                    its actual elevation is 5359 metres making Dungri La the highest motorable road pass in India.</p>
+                </div>
+                <div class="column">
+                    <h3>Nubra Valley</h3>
+                    <img src="nubra.jpg" width="300">
+                    <p>Nubra Valley, nestled in the union territory of Ladakh, lies approximately 140 kilometers from Leh, along the ancient Silk Route.
+                    Characterized by the meandering Shyok and Nubra rivers, the valley boasts stunning landscapes with arid mountains serving
+                    as a dramatic backdrop and dotted with beautiful monasteries. Accessible via the world-famous Khardung La Pass,
+                    known as one of the highest motorable passes globally, the valley captivates visitors with surreal landscapes,
+                    featuring dramatic mountains,sweeping sand dunes, and lush green valleys, offering a visual feast for the senses.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
